@@ -64,10 +64,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install dependencies
-        run: |
-          pip install -r tourism_project/requirements.txt
-          pip install mlflow
-          mflow --version
+        run: pip install -r tourism_project/requirements.txt
       - name: Download train/test splits
         uses: actions/download-artifact@v4
         with:
